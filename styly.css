@@ -1,0 +1,15 @@
+header {
+    background-color: red;
+    color: white;
+    text-align: right;
+}
+
+.logo {
+    background-color: white;
+    text-align: left;
+}
+
+#main {
+    background-color: red;
+    color: white;
+}
