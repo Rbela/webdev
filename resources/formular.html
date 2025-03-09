@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+   
+    <form class="border w-1/10" id="formular">
+        <label for="Test">Tajná myška věc</label>
+        <input type="text" id="Test" name="Test" required minlength="8" />
+        <span id="errorMessage" class="text-red-500 text-sm hidden">Nesmí být kratší než osm znaků</span>
+      </form>
+
+<script>
+
+    const form = document.getElementById('formular');
+    const input = document.getElementById('Test');
+    const errorMessage = document.getElementById('errorMessage');
+
+   
+    input.addEventListener('input', function() {
+      if (input.value.length < 8) {
+        errorMessage.classList.remove('hidden'); 
+      } else {
+        errorMessage.classList.add('hidden'); 
+      }
+    });
+  </script>
+
+  </body>
+</html>

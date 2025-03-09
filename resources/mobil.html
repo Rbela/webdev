@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+
+  <body>
+   
+  <header class="lg:bg-gray-600 bg-red-500 text-white p-4 justify-around items-center lg:flex">
+<!-- lg: Úprava pro mobily, když použiju lg znamená to od blabla velikosti platí např. flex, na menších obrazovkách se flex ukazovat nebude
+Breakpoint prefix	Minimum width	CSS
+sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... } -->
+    <h1 class="text-3xl font-bold underline">
+        Čus bus autobus
+    </h1>
+
+    <nav>
+        jsem navigace
+    </nav>
+
+
+
+  </header>
+  <div class=" py-4 -space-x-2">
+      <button class="text-lg bg-purple-500 px-4 py-2 rounded-lg text-white font-bold m-8 relative"> Objednat
+          <span class="p-2 bg-red-500 rounded-full w-6 h-6 text-xs absolute -top-2 -right-2 flex items-center justify-center ">1</span>
+        </button>
+    </div>
+        
+</body>
+
+</html>
